@@ -1,0 +1,52 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "pricone-tl",
+	"patterns": [
+		{
+			"include": "#nyaru"
+		},
+		{
+			"include": "#bossub"
+		},
+		{
+			"include": "#kokkoro"
+		},
+		{
+			"include": "#kuris"
+		}
+	],
+	"repository": {
+		"nyaru": {
+			"patterns": [{
+				"name": "keyword.control.tl",
+				"match": "ニャル"
+			}
+			]
+		},
+		"bossub":{
+			"patterns": [
+				{
+					"name":"invalid.illegal",
+					"match": ".*(敵UB|ボスUB|bossUB).*"
+				}
+			]
+		},
+		"kokkoro":{
+			"patterns": [
+				{
+					"name": "entity.name.class",
+					"match": "コッコロ|プリコロ"
+				}
+			]
+		},
+		"kuris":{
+			"patterns":[
+				{
+					"name": "entity.other.attribute-name.class.css",
+					"match": "クリス"
+				}
+			]
+		}
+	},
+	"scopeName": "source.tl"
+}
