@@ -12,14 +12,20 @@
 			"include": "#kokkoro"
 		},
 		{
-			"include": "#kuris"
+			"include": "#chris"
+		},
+		{
+			"include": "#sizru"
+		},
+		{
+			"include": "#rei"
 		}
 	],
 	"repository": {
 		"nyaru": {
 			"patterns": [{
-				"name": "keyword.control.tl",
-				"match": "ニャル"
+				"name": "token.debug-token",
+				"match": "キャル\\s?\\(ニューイヤー\\)|ニャル"
 			}
 			]
 		},
@@ -35,15 +41,39 @@
 			"patterns": [
 				{
 					"name": "entity.name.class",
-					"match": "コッコロ|プリコロ"
+					"match": "コッコロ\\s?\\(プリンセス\\)|コッコロ|プリコロ"
 				}
 			]
 		},
-		"kuris":{
+		"chris":{
 			"patterns":[
 				{
 					"name": "entity.other.attribute-name.class.css",
-					"match": "クリス"
+					"match": "クリスティーナ|クリス"
+				}
+			]
+		},
+		"kasumi":{
+			"patterns": [
+				{
+					"name": "keyword.operator.new",
+					"match": "カスミ"
+				}
+			]
+		},
+		"sizru":{
+			"patterns": [
+				{
+					"name":"token.debug-token",
+					"match": "シズル\\s?\\(バレンタイン\\)|バレシズ|シズル"
+				}
+			]
+		},
+		"rei":{
+			"patterns": [
+				{
+					"name": "constant.character",
+					"match": "レイ"
 				}
 			]
 		}
