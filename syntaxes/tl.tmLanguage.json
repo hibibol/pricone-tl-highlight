@@ -49,7 +49,7 @@
 			"patterns":[
 				{
 					"name": "entity.other.attribute-name.class.css",
-					"match": "クリスティーナ|クリス"
+					"match": "クリスティーナ|\\sクリス"
 				}
 			]
 		},
@@ -64,8 +64,8 @@
 		"sizru":{
 			"patterns": [
 				{
-					"name":"token.debug-token",
-					"match": "シズル\\s?\\(バレンタイン\\)|バレシズ|シズル"
+					"name":"entity.name.operator",
+					"match": "シズル\\s?\\(バレンタイン\\)|バレシズ"
 				}
 			]
 		},
@@ -73,7 +73,7 @@
 			"patterns": [
 				{
 					"name": "constant.character",
-					"match": "レイ"
+					"match": "\\sレイ"
 				}
 			]
 		}

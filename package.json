@@ -1,8 +1,9 @@
 {
     "name": "pricone-tl-highlight",
-    "displayName": "pricone-tl-highlight",
-    "description": "",
-    "version": "0.0.1",
+    "displayName": "Pricone-TL-highlight",
+    "description": "Princess Connect Re:Dive のクランバトルで使用するタイムラインをハイライトする拡張機能",
+	"publisher": "hibi",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.52.0"
     },
