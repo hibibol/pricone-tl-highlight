@@ -15,17 +15,23 @@
 			"include": "#chris"
 		},
 		{
-			"include": "#sizru"
+			"include": "#maho"
 		},
 		{
 			"include": "#rei"
+		},
+		{
+			"include": "#akino"
+		},
+		{
+			"include": "#puyori"
 		}
 	],
 	"repository": {
 		"nyaru": {
 			"patterns": [{
 				"name": "token.debug-token",
-				"match": "キャル\\s?\\(ニューイヤー\\)|ニャル"
+				"match": "キャル\\s?[\\(（]ニューイヤー[\\)）]|ニャル"
 			}
 			]
 		},
@@ -41,7 +47,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.class",
-					"match": "コッコロ\\s?\\(プリンセス\\)|コッコロ|プリコロ"
+					"match": "コッコロ\\s?[\\(（]プリンセス[）\\)]|コッコロ|プリコロ"
 				}
 			]
 		},
@@ -49,7 +55,7 @@
 			"patterns":[
 				{
 					"name": "entity.other.attribute-name.class.css",
-					"match": "クリスティーナ|\\sクリス"
+					"match": "[^(クリ)]クリス(ティーナ)?"
 				}
 			]
 		},
@@ -61,19 +67,35 @@
 				}
 			]
 		},
-		"sizru":{
-			"patterns": [
-				{
-					"name":"entity.name.operator",
-					"match": "シズル\\s?\\(バレンタイン\\)|バレシズ"
-				}
-			]
-		},
 		"rei":{
 			"patterns": [
 				{
 					"name": "constant.character",
 					"match": "\\sレイ"
+				}
+			]
+		},
+		"maho":{
+			"patterns": [
+				{
+					"name": "meta.preprocessor.string",
+					"match": "マホ"
+				}
+			]
+		},
+		"akino":{
+			"patterns": [
+				{
+					"name": "token.debug-token",
+					"match": "アキノ"
+				}
+			]
+		},
+		"puyori":{
+			"patterns": [
+				{
+					"name": "variable",
+					"match": "プヨリ|ヒヨリ\\s?[\\(（]プリンセス[）\\)]"
 				}
 			]
 		}
